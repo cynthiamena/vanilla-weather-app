@@ -14,7 +14,8 @@
 <body>
     <div class="container"> 
         <div class="weather-app">
-   
+            <div class="weather-app-wrapper">
+   <div class="overview">
     <h1>
         New York
     </h1>
@@ -26,10 +27,15 @@
             Clear
         </li>
     </ul>
+   </div>
         <div class="row">
             <div class="col-6">
-                <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="sunny"/>
-                12℃ | ℉
+                <div class="clearfix weather-temperature">
+                    <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="Clear" class="float-left"/>
+                        <div class="float-left">
+                            12℃ | ℉
+                        </div>
+                </div>
             </div>
             <div class="col-6">
                 <ul>
@@ -45,12 +51,14 @@
                 </ul>
             </div>
         </div>
-        <small>
+    </div>
+</div>
+         <small>
             <a href="file:///Users/cynthiamena/Desktop/vanilla-weather-app/index.html" target="_blank"
-                >This app is an open-source code,</a> 
+                >Open-source code</a> 
                 by Cynthia Mena-Rodegeb
         </small>
-        </div>
+       
     </div>
 
 <script src= "src/app.js"></script>
