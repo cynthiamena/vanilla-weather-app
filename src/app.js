@@ -38,7 +38,9 @@ function displayTemperature(response){
     iconElement.setAttribute("src", `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 }
 let apiKey = "99a398f69eb5ef956faaa6fa2d5a36be";
-let city = "New York";
+let city = "San Francisco";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
 axios.get(apiUrl).then(displayTemperature);
+
+
