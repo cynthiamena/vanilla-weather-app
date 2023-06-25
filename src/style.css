@@ -57,9 +57,22 @@ li:first-letter{
     line-height: 1;
     text-align: left;
     user-select: none;
+    text-decoration: none;
 }
+
 .weather-temperature .units{
     position: relative;
     font-size: 16px;
     top: -34px;
+}
+
+.weather-temperature .active{
+    color: black;
+    cursor: default;      
+    text-decoration: none;
+
+}
+
+.weather-temperature .activeFah {
+    text-decoration: none;
 }
