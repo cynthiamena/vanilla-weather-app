@@ -17,12 +17,7 @@ function formatDate(timestamp){
     return`${day} ${hours}:${minutes}`;
 }
 
-function displayForecast() {
-    let forecastElement = document.querySelector("#forecast");
 
-    forecastElement.innerHTML = 
-            
-}
 
 function displayTemperature(response){
 
@@ -92,4 +87,4 @@ celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 search("New York");
 
-displayForecast();
+
