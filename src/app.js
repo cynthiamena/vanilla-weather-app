@@ -21,7 +21,7 @@ function displayForecast(){
     let forecastElement = document.querySelector("#forecast");
 
     let forecastHTML = `<div class="row">`;
-    let days = ["Thu", "Fri", "Sat", "Sun"];
+    let days = ["Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
     days.forEach(function (day){
         forecastHTML = forecastHTML + 
         `
@@ -48,6 +48,9 @@ function displayForecast(){
     forecastHTML = forecastHTML+ `</div>`;
     forecastElement.innerHTML = forecastHTML;
 }
+function getForecast(coordinates){
+    console.log(coordinates);
+}
 
 function displayTemperature(response){
 
@@ -69,6 +72,8 @@ function displayTemperature(response){
     windElement.innerHTML = Math.round(response.data.wind.speed);
     dateElement.innerHTML = formatDate(response.data.dt * 1000);
     iconElement.setAttribute("src", `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+
+    getForecast(response.data.coord);
 }
 
 function search(city){
